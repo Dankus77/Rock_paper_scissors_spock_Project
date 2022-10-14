@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock_paper_scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="first">
+        <nav class="game_list">
+            <ul>
+                <li>ROCK</li>
+                <li>PAPER</li>
+                <li>SCISSORS</li>
+                <li>LIZARD</li>
+                <li>SPOCK</li>
+            </ul>   
+            <div class="score">
+            <div class="score_title">SCORE</div>
+            <div class="score_number">12</div>
+            </div>
+        </nav>
+    </section>
+    <section class="second">
+        <div class="game_play">
+        <div class="paper"><img src="/images/icon-paper.svg" alt=""></div>
+        <div class="scissors"><img src="/images/icon-scissors.svg" alt=""></div>
+        <div class="rock"><img src="/images/icon-rock.svg" alt=""></div>
+        <div class="lizard"><img src="/images/icon-lizard.svg" alt=""></div>
+        <div class="spock"><img src="/images/icon-spock.svg" alt=""></div>
+        </div>
+    </section>
+    <div class="icon_picked" id="hidden">
+        <div class="selection">
+            <p>You picked</p>
+        </div>
+        <div class="user_pick"></div>
+        <div>
+            <div class="result" id="hidden">
+                You lose
+            </div>
+            <button>Play again</button>
+        </div>
+        <div class="selection">
+            <p>The house picked</p>
+        </div>
+        <div class="comp_pick"></div>
+    </div>
+    <button class="rules">Rules</button>
+    <div class="modal_el"></div>
+    <div class="modal">
+<span class="close">
+    <img src="/image/icon-close.svg" alt="">
+</span>
+<title>Rules</title>
+<div class="content">
+    <img src="/images/image-rules-bonus.svg" alt="">
+</div>
+    </div>
+</body>
+</html>

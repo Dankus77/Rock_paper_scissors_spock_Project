@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+.img{
+    max-width: 100%;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#hidden{
+    display: none;
+}
