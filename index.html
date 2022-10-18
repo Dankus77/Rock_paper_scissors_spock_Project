@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock_paper_scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=Epilogue:wght@200;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="main">
     <section class="first">
         <nav class="game_list">
             <ul>
@@ -25,39 +29,41 @@
     </section>
     <section class="second">
         <div class="game_play">
-        <div class="paper"><img src="/images/icon-paper.svg" alt=""></div>
-        <div class="scissors"><img src="/images/icon-scissors.svg" alt=""></div>
-        <div class="rock"><img src="/images/icon-rock.svg" alt=""></div>
-        <div class="lizard"><img src="/images/icon-lizard.svg" alt=""></div>
-        <div class="spock"><img src="/images/icon-spock.svg" alt=""></div>
+        <div class="game_card paper"><img src="/rock-paper-scissors-master/rock-paper-scissors-master/images/icon-paper.svg" alt="paper_image"></div>
+        <div class="game_card scissors"><img src="/rock-paper-scissors-master/rock-paper-scissors-master/images/icon-scissors.svg" alt="scissors_image"></div>
+        <div class="game_card rock"><img src="/rock-paper-scissors-master/rock-paper-scissors-master/images/icon-rock.svg" alt="rock_image"></div>
+        <div class="game_card lizard"><img src="/rock-paper-scissors-master/rock-paper-scissors-master/images/icon-lizard.svg" alt="lizard_image"></div>
+        <div class="game_card spock"><img src="/rock-paper-scissors-master/rock-paper-scissors-master/images/icon-spock.svg" alt="spock_image"></div> 
         </div>
     </section>
-    <div class="icon_picked" id="hidden">
-        <div class="selection">
+    <div class="icon_picked flex_row hidden">
+        <div class="selection flex_column">
             <p>You picked</p>
+            <div class="user_pick"></div>
         </div>
-        <div class="user_pick"></div>
-        <div>
-            <div class="result" id="hidden">
+        <div class="result">
+            <div class="title">
                 You lose
             </div>
             <button>Play again</button>
         </div>
-        <div class="selection">
+        <div class="selection flex_column">
             <p>The house picked</p>
-        </div>
         <div class="comp_pick"></div>
     </div>
-    <button class="rules">Rules</button>
+</div>
+    <button class="rules_btn">Rules</button>
     <div class="modal_el"></div>
     <div class="modal">
 <span class="close">
-    <img src="/image/icon-close.svg" alt="">
+    <img src="/rock-paper-scissors-master/rock-paper-scissors-master/images/icon-close.svg" alt="close_image">
 </span>
-<title>Rules</title>
+<div class="title">Rules</div>
 <div class="content">
-    <img src="/images/image-rules-bonus.svg" alt="">
+    <img src="/rock-paper-scissors-master/rock-paper-scissors-master/images/image-rules-bonus.svg" alt="rules_image">
 </div>
     </div>
+</div>
 </body>
+<script src="script.js"></script>
 </html>
