@@ -65,8 +65,8 @@ function game(){
 
     function buildChoiceElement(isItUserElement, className){
        const el = document.createElement('div');
-       el.classList = [`icon_overlay ${className}`];
-       el.innerHTML = `<img src=".rock-paper-scissors-master/rock-paper-scissors-master/images/icon-${className}.svg" alt="${className}">`;
+       el.classList = [`game_card ${className}`];
+       el.innerHTML = `<img src="/rock-paper-scissors-master/rock-paper-scissors-master/images/icon-${className}.svg" alt="${className}">`;
        if(isItUserElement){
         userPickedElement.append(el);
        }else{
